@@ -67,7 +67,7 @@ export function drawIcon({ qrcode, title, titleSize, titleColor, titleAlign, ico
 
     if (title) {
         const svgWidth = styles.svg && styles.svg.width ? styles.svg.width.replace("px", "") : 300;
-        const titleFontSize = 14 || titleSize ;// Number(nCount + nCount / 5 * 2) * (titleSize || fontSize || 12) / svgWidth;
+        const titleFontSize = titleSize || 10 ;// Number(nCount + nCount / 5 * 2) * (titleSize || fontSize || 12) / svgWidth;
         const titleFontColor = titleColor || color || "#000000";
 
         const fontY = titleVerticalAlign === "middle"
