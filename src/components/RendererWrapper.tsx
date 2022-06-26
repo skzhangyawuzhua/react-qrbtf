@@ -74,7 +74,7 @@ export function drawIcon({ qrcode, title, titleSize, titleColor, titleAlign, ico
             ? (icon ? (iconXY + iconSize) : (nCount / 2 + titleFontSize * .5))
             : Number(nCount + nCount / 5) - titleFontSize * .5;
 
-        pointList.push(<text key={3} x={nCount / 2} y={fontY} fill={titleFontColor} style={{ ...titleStyle, fontSize: titleFontSize }} textAnchor="middle">{title}</text>)
+        pointList.push(<text key={3} x={nCount / 2} y={fontY} fill={titleFontColor} style={{ ...titleStyle }} font-size={{titleFontSize}} textAnchor="middle">{title}</text>)
     }
 
     return pointList;
