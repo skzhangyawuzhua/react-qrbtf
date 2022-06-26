@@ -14,6 +14,6 @@ export interface IOptions {
     typeNumber?: number;
     correctLevel?: string;
 }
-export declare function getLevelNumber(level: string): 2 | 1 | 0 | 3;
+export declare function getLevelNumber(level: string): 1 | 0 | 2 | 3;
 export declare function encodeData(options: IOptions): QRCode | undefined;
 export declare function getTypeTable(qrcode: QRCode): number[][];
