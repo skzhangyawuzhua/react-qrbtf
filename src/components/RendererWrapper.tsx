@@ -62,7 +62,7 @@ export function drawIcon({ qrcode, title, titleSize, titleColor, titleAlign, ico
     }
 
     if (icon) {
-        pointList.push(<image key={2} xlinkHref={icon} width={iconSize} x={iconXY} y={iconXY} />);
+        pointList.push(<image key={2} xlinkHref={icon} width={iconSize} height={iconSize} x={iconXY} y={iconXY} />);
     }
 
     if (title) {
